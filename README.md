@@ -22,9 +22,9 @@ Install it with:
 Use it in your python programs with:
 
 ```python
-from singleton import Singleton
+from singleton import singleton
 
-@Singleton
+@singleton()
 class MySingleton(object):
     pass
 
