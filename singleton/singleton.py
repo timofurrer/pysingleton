@@ -4,21 +4,21 @@ import thread
 
 
 def singleton(multi_init=False):
+    """decorator for a thread-safe singleton pattern.
+        Please just use the singleton pattern if it is not
+        possible do solve your problem in another way.
+
+        Example:
+
+        >>> @singleton()
+        ... class MySingleton(object):
+        ...     pass
+        >>> o = MySingleton()
+        >>> o2 = MySingleton()
+        >>> print o is o2
+
+    """
     def _singleton_decorator(decorated_class):
-        """decorator for a thread-safe singleton pattern.
-            Please just use the singleton pattern if it is not
-            possible do solve your problem in another way.
-
-            Example:
-
-            >>> @singleton()
-            ... class MySingleton(object):
-            ...     pass
-            >>> o = MySingleton()
-            >>> o2 = MySingleton()
-            >>> print o is o2
-
-        """
         class _singleton(decorated_class):
             _instance = None
             _lock = thread.allocate_lock()
