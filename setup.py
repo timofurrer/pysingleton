@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(
-    name="singleton",
+    name="pysingleton",
     description="Use singletons with a decorator",
     version="0.00.01",
     author="Timo Furrer",
