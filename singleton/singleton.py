@@ -2,10 +2,8 @@
 
 try:
     import _thread as thread
-    print("use python3")
 except ImportError:
     import thread
-    print("use python2")
 
 
 def singleton(multi_init=False):
