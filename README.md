@@ -2,6 +2,10 @@
 > module which provides a decorator to create thread-safe singleton classes <br />
 > *Version: 0.00.01*
 
+## ABANDONED
+
+Please, don't use this anymore ..
+
 ***
 
 **Author:** Timo Furrer <tuxtimo@gmail.com><br />
