@@ -1,6 +1,6 @@
 # pysingleton
 > module which provides a decorator to create thread-safe singleton classes <br />
-> *Version: 0.00.01*
+> *Version: 0.2.1*
 
 ## ABANDONED!!!
 
